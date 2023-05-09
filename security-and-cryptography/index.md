@@ -31,3 +31,12 @@ sha256sum debian-11.7.0-amd64-netinst.iso
 ```
 Since the hash computed with `sha256sum` for the file downloaded from
 Argentinian mirror matches what listed on Debian website, this mirror is legit.
+
+### Question 3
+Follow the instructions in the exercise description. There should be no problem
+if the steps are followed as-is. Notably, running `cat` on the encrypted file
+shows clearly that a salt was used during encryption.
+```
+$ cat ciphertext
+Salted__gٯܤHnV@(jA~(x  +&=
+```
