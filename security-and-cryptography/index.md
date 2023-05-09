@@ -5,5 +5,6 @@ date: 2023-05-09
 ---
 
 ### Question 1
-1. Entropy can be calculated using the number of possibilities:
-   $\log_{2}possibilities$
+1. Entropy can be calculated by taking log base 2 of possibilities. Since there
+   are `100000^4` possibilities, our password will have approximately __66__
+   bits of entropy.
