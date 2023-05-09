@@ -1,2 +1,3 @@
-# missing-semester-solutions
-My solutions for MIT Missing Semester 2020
+# Solutions by lecture
+
+* [Security and Cryptography](./security-and-cryptography)
