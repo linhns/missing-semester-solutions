@@ -40,3 +40,12 @@ shows clearly that a salt was used during encryption.
 $ cat ciphertext
 Salted__gٯܤHnV@(jA~(x  +&=
 ```
+
+### Question 4
+1. Not much to do here, note that ssh use ED25519.
+2. A better way is to run
+```bash
+gpg --full-generate-key
+```
+3.
+4. The commit contains this line is signed with GPG
