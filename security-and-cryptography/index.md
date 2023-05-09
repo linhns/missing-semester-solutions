@@ -20,3 +20,14 @@ date: 2023-05-09
 times.
   * First password: `100000 ^ 4 / 315360000000 = 3.17 * 10^8` years.
   * Second password: `62 ^ 8 / 315360000000 = 692` years.
+
+### Question 2
+Instructions here are for Linux and Debian version `11.7.0` accordingly. Substitute
+suitable values depending on your OS.
+```bash
+curl -LO
+http://debian.xfree.com.ar/debian-cd/current/amd64/iso-cd/debian-11.7.0-amd64-netinst.iso
+sha256sum debian-11.7.0-amd64-netinst.iso
+```
+Since the hash computed with `sha256sum` for the file downloaded from
+Argentinian mirror matches what listed on Debian website, this mirror is legit.
