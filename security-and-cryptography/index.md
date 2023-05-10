@@ -47,5 +47,5 @@ Salted__gٯܤHnV@(jA~(x  +&=
 ```bash
 gpg --full-generate-key
 ```
-3.
+3. _private_
 4. The commit contains this line is signed with GPG
