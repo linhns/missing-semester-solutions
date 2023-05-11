@@ -32,4 +32,4 @@ Without memoization, `fib0` is called 21 times.
 
 With memoization, `fib0` is only called 1 time.
 
-![](./default.png)
+![](./memoized.png)
