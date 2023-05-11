@@ -33,3 +33,22 @@ Without memoization, `fib0` is called 21 times.
 With memoization, `fib0` is only called 1 time.
 
 ![](./memoized.png)
+
+### Question 7
+One-liner:
+```bash
+lsof | grep -e "4444.*LISTEN" | awk '{print $2};' | xargs kill
+```
+
+### Question 8
+`stress` will not take 3 CPUs since `taskset` fixes the CPU affinity of the
+`stress` command, which now can only use CPU #0 and #2.
+
+To achieve the same using `cgroups`:
+```bash
+sudo mkdir /sys/fs/cgroup/cpuset/missing-semester
+echo "0, 2" | sudo tee /sys/fs/cgroup/cpuset/missing-semester/cpuset.cpus
+echo "1" | sudo tee /sys/fs/cgroup/cpuset/missing-semester/cpuset.mems
+echo "<pid of stress>" | sudo tee
+/sys/fs/cgroup/cpuset/missing-semester/cpuset.procs
+```
