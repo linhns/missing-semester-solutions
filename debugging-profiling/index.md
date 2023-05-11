@@ -27,4 +27,9 @@ done
 
 ### Question 6
 Without memoization, `fib0` is called 21 times.
+
+![](./default.png)
+
+With memoization, `fib0` is only called 1 time.
+
 ![](./default.png)
