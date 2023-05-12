@@ -25,6 +25,16 @@ do
 done
 ```
 
+### Question 5
+When compared using `perf`, differences between algorithms are small, however
+insertion sort took more cpu cycles to complete. Regarding cache hits and
+misses, it is relatively the same for all 3 algorithms. There is no noticeable
+improvement between the in-place sorts, which theory suggests is more
+memory-efficient.
+```bash
+perf stat -e cycles,cache-references,cache-misses -r 20 -- python3 sorts.py <algorithm>
+```
+
 ### Question 6
 Without memoization, `fib0` is called 21 times.
 
